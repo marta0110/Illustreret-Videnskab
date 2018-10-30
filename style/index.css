@@ -110,6 +110,50 @@
     background-color: #F09D00;
 }
 
+/* sidenav */
+    
+    #sidenav {
+    visibility: visible;
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    z-index: 9;
+    bottom: -10vh;
+    background-color: #3F3F3F;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    transition: 1s;
+    padding-top: 20px;
+}
+
+#sidenav a {
+    padding: 80px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 3vh;
+    color: white;
+    display: block;
+    transition: 0.3s;
+    text-align: center;
+    align-content: center;
+    font-family: "Lato", "sans-serif";
+    font-weight: 100;
+    margin-top: 1vh;
+    margin-bottom: 2vh;
+}
+
+#sidenav a:hover {
+    color: #f15d62;
+}
+
+#sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 45px;
+    margin-left: 50px;
+}
+
+
 @media screen and (min-width: 500px) {
 
     .header {
@@ -230,5 +274,8 @@
         width: 15vw;
     margin-top: 30px; 
     }
+    
+    
 
 }
+
