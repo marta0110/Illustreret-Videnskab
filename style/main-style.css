@@ -28,9 +28,15 @@ button {
 
 /*...................................*/
 /*index.html*/
+
+.header{
+    height: 20vh;
+    width: 100vw;
+}
 .sub-img-1 {
   grid-area: 1/1/1/2;
 }
+
 
 .sub-img-2 {
   grid-area: 1/2/1/3;
