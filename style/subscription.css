@@ -1,0 +1,52 @@
+/* desktop first*/
+* {
+  font-family: "Times New Roman", Times, serif;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+div {
+  position: relative;
+  padding: 100px;
+  margin: 10px;
+  /* background-color: lightgreen; */
+  border: 1px black solid;
+  text-align: center;
+  font-weight: 400;
+  font-size: 25px;
+  text-transform: uppercase;
+}
+
+button {
+  width: auto;
+}
+
+/*..................................*/
+/* subscription.html*/
+.landing-page {
+  grid-area: 1/1/1/3;
+}
+
+.table-offers {
+  grid-area: 2/1/2/3;
+}
+
+.form-area {
+  grid-area: 3/1/3/3;
+}
+
+/*......................*/
+/* kind of footer*/
+.other-offers {
+  grid-area: 4/1/4/3;
+}
+
+.about-us {
+  grid-area: 5/1/5/3;
+}
+/* mobile */
