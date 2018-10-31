@@ -114,7 +114,7 @@
     
     #sidenav {
     visibility: visible;
-    height: 100vh;
+    height: 0vh;
     width: 100vw;
     position: fixed;
     z-index: 9;

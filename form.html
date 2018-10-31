@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="form.css">
+    <title>E-mail</title>
+</head>
+
+<body>
+    <!-- You probably have to add more attributes to the form, and check is it ok - maybe your bf can help us - after clicking submit-->
+    <form action="receiver.php">
+
+        <div class="step-1">
+            <h3> Step 1: Choose your jacket size </h3>
+        </div>
+
+        <div class="wrapper-1">
+            <div class="jacket">
+                <img src="images/newjacket1.png">
+                <p> N'arctic Fiber Jacket</p>
+            </div>
+
+            <h4> choose a size: </h4>
+
+ <select>
+  <option value="S">S</option>
+  <option value="M">M</option>
+  <option value="L">L</option>
+  <option value="XL">XL</option>
+</select>
+
+        </div>
+
+
+        <fieldset>
+
+            <input type="submit" value="submit">
+            <div>
+
+                <label for="name">First name:</label>
+                <input type="text" id="FirstName" name="first_name" placeholder="First name" required minlength="3" maxlength="10">
+                <span class="required"></span>
+                <span class="correct"></span>
+            </div>
+
+            <div>
+
+                <label for="name">Last name:</label>
+                <input type="text" id="LastName" name="last_name" placeholder="Last name" required minlength="3" maxlength="10">
+                <span class="required"></span>
+                <span class="correct"></span>
+            </div>
+            <div>
+
+                <label for="mail">E-mail:</label>
+                <input type="email" id="mail" name="user_mail" placeholder="e-mail" required>
+                <span class="required"></span>
+                <span class="correct"></span>
+            </div>
+            <div>
+
+                <label for="mail">Phone:</label>
+                <input type="phone" id="phone" name="user_phone" placeholder="phone" required minlength="5" maxlength="12">
+                <span class="required"></span>
+                <span class="correct"></span>
+            </div>
+            <div>
+
+                <label for="msg">Message:</label>
+                <textarea id="msg" name="user_message" value="Write your message here" minlength="30" maxlength="250" required></textarea>
+                <span class="required"></span>
+                <span class="correct"></span>
+            </div>
+            <div>
+
+                <div class="subscription">
+                    <span> Subscription type:</span>
+                    <label><input type="radio" name="sub_type" value="free"> Free </label>
+                    <label><input type="radio" name="sub_type" value="free">Cheap</label>
+                    <label><input type="radio" name="sub_type" value="free">Expensive</label>
+                </div>
+
+            </div>
+
+            <div class="terms">
+                <input type="checkbox" id="terms" name="terms" required> <label for="terms"> Agree for terms and
+                    conditions</label>
+
+            </div>
+
+        </fieldset>
+
+
+        <style>
+            body {
+                width: 100vw;
+                height: auto;
+                overflow-x: hidden;
+                background-color: #fefefe;
+            }
+
+            div {
+                display: grid;
+            }
+
+            .required:after {
+                content: "*";
+                color: red;
+            }
+
+            :required {
+                border: 1px solid black;
+            }
+
+            input:valid {
+                border: 1px solid black;
+            }
+
+            div input:valid:not(:placeholder-shown)~.correct::after {
+                content: "✅";
+            }
+
+            div input:invalid:not(:placeholder-shown)~.correct::after {
+                content: "this field is required";
+                color: red;
+            }
+
+            fieldset {
+                width: 60vw;
+                margin: 0 auto;
+                height: auto;
+                padding: 2vw;
+                display: grid;
+                grid-template-columns: 1fr;
+                background-color: #b4eced;
+                border: 1px solid #b4eced;
+                border-radius: 20px;
+                grid-column-gap: 10px;
+                justify-content: start;
+                position: relative;
+                padding-bottom: 10vw;
+            }
+
+            fieldset>div {
+                display: grid;
+                grid-template: auto/repeat(4, auto);
+                padding-bottom: 10px;
+                margin: 0;
+                justify-content: start;
+                width: 300px;
+            }
+
+            fieldset>div label {
+                min-width: 15vw;
+            }
+
+            fieldset>div input {
+                min-width: 20vw;
+                max-width: 20vw;
+            }
+
+            fieldset>div textarea {
+                min-width: 20vw;
+                max-width: 20vw;
+            }
+
+            fieldset>div .correct {
+                min-width: 20vw;
+                max-width: 20vw;
+            }
+
+            fieldset>div .subscription span {
+                font-family: "Lato", sans-serif;
+                font-weight: 200;
+                font-size: 16px;
+                padding: 5px;
+            }
+
+            fieldset>div .subscription {
+                display: grid;
+                grid-template-columns: 1fr;
+            }
+
+            fieldset>.terms label {
+                grid-column-start: 2;
+                grid-column-end: 4;
+            }
+
+            fieldset>.terms {
+                padding: 5px;
+            }
+
+            fieldset>legend {
+                order: 1;
+            }
+
+            fieldset>input[type="submit"] {
+                order: 8;
+                border-radius: 8px;
+                padding: 10px;
+                background-color: turquoise;
+                border: 1px solid turquoise;
+                color: white;
+                grid-column-start: 2;
+                grid-column-end: 4;
+                cursor: pointer;
+                position: absolute;
+                padding: 10px;
+                width: 80px;
+                height: auto;
+                left: 20vw;
+                bottom: 3vw;
+            }
+
+            fieldset>input[type="submit"]:hover {
+                background-color: rgb(49, 184, 170);
+                border: 1px solid rgb(49, 184, 170);
+            }
+
+            fieldset>div:nth-of-type(1) {
+                order: 2;
+            }
+
+            fieldset>div:nth-of-type(2) {
+                order: 3;
+            }
+
+            fieldset>div:nth-of-type(3) {
+                order: 4;
+            }
+
+            fieldset>div:nth-of-type(4) {
+                order: 5;
+            }
+
+            fieldset>div:nth-of-type(5) {
+                order: 6;
+            }
+
+            fieldset>div:nth-of-type(6) {
+                order: 7;
+            }
+
+            fieldset legend {
+                font-family: "Lato", sans-serif;
+                font-weight: 200;
+                font-size: 20px;
+            }
+
+            h1 {
+                font-family: "Lato", sans-serif;
+                font-weight: 200;
+                font-size: 26px;
+            }
+
+            fieldset label {
+                font-family: "Lato", sans-serif;
+                font-weight: 200;
+                font-size: 16px;
+            }
+
+            fieldset textarea {
+                font-family: "Lato", sans-serif;
+                font-weight: 200;
+                font-size: 16px;
+                padding: 2vw;
+            }
+
+            fieldset label {
+                margin-top: 5px;
+                margin-bottom: 5px;
+            }
+
+            fieldset [submit] {
+                margin-top: 5px;
+                margin-bottom: 5px;
+                background-color: #73b3b5;
+                padding: 5px;
+            }
+
+            p {
+                font-family: "Lato", sans-serif;
+                font-weight: 200;
+                font-size: 20px;
+            }
+
+            input[type="submit"]:active~div input {
+                background-color: red;
+            }
+
+        </style>
+    </form>
+
+
+</body>
+
+</html>
+© 2018 GitHub, Inc. Terms Privacy Security Status Help Contact GitHub Pricing API Training Blog About Press h to open a hovercard with more details.

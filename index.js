@@ -1,9 +1,9 @@
 
 function openNav() {
-  document.getElementById("sidenav").style.width = "100vh";
+  document.getElementById("sidenav").style.height = "100vh";
  
 }
 
 function closeNav() {
-  document.getElementById("sidenav").style.width = "0";
+  document.getElementById("sidenav").style.height = "0";
 }
