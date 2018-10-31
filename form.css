@@ -108,6 +108,7 @@ input:valid {
 
 .wrapper-2 div input:valid:not(:placeholder-shown) ~ .correct::after {
     content: "✅";
+  
 }
 
 div input:invalid:not(:placeholder-shown) ~ .correct::after {
@@ -218,12 +219,12 @@ fieldset > input[type="submit"] {
     grid-column-end: 4;
     cursor: pointer;
     position: absolute;
-    padding: 10px;
     width: 80px;
     height: auto;
-    left: 20vw;
-    bottom: 3vw;
+    left: 37vw;
+    bottom: -3vw;
     cursor: pointer;
+    justify-self: center;
 }
 
 fieldset > input[type="submit"]:hover {
@@ -249,14 +250,6 @@ fieldset label {
     margin-bottom: 5px;
 }
 
-
-p {
-    font-family: "Lato", sans-serif;
-    font-weight: 200;
-    font-size: 20px;
-    margin: 0 auto;
-    place-self: center;
-}
 
 input[type="submit"]:active ~ div input {
     background-color: red;
@@ -313,6 +306,28 @@ input[type="submit"]:active ~ div input {
     .wrapper-1 select {
         width: 10vw;
     }
+    
+    
+    /* step 2 */
+    
+fieldset > div label {
+    min-width: 15vw;
+   
+}
+
+fieldset > div input {
+    min-width: 35vw;
+    max-width: 35vw;
+}
+  
+  fieldset > input[type="submit"] {
+    left: 30vw;
+    bottom: 2vw;
+    cursor: pointer;
+    justify-self: center;
+}
+ 
+    
 }
 
 
