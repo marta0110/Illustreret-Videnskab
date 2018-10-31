@@ -41,7 +41,7 @@
 
 .section_1 {
     background-color: #F9FAF9;
-    width: 90vw;
+    width: 100vw;
     height: auto;
     margin: 0 auto;
     padding: 30px;
@@ -142,7 +142,7 @@
 }
 
 #sidenav a:hover {
-    color: #f15d62;
+    color: #FFB100;
 }
 
 #sidenav .closebtn {
@@ -151,6 +151,73 @@
     right: 25px;
     font-size: 45px;
     margin-left: 50px;
+}
+
+
+/* section 2*/
+
+.section_2 {
+    background-color: #4C526E;
+    width: 100vw;
+    height: auto;
+    margin: 0 auto;
+    padding: 30px;
+    display: grid;
+    grid-template-columns: 1fr; 
+}
+
+.section_2 img{
+    width:  50vw;
+    height: auto;
+    margin: 0 auto;
+}
+
+.section_2 h3{
+    color: white;
+    font-family: "Lato", "sans-serif";
+    font-size: 22px;
+    text-align: center;
+    font-weight: 200;
+    letter-spacing: 1px;
+}
+.section_2 p{
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    font-family: "Lato-Hairline", "sans-serif";
+    font-size: 15px;
+    text-align: center;
+    font-weight: 100;
+    letter-spacing: 1px;
+}
+
+.section_2 h4{
+    color: white;
+    padding-bottom: 20px;
+    font-family: "Lato", "sans-serif";
+    font-size: 15px;
+    text-align: center;
+    font-weight: 100;
+    letter-spacing: 1px;
+}
+
+
+.section_2  button{
+    background-color: #F7B230;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    width: 25vw;
+    height: 4vh;
+    justify-self: center;
+    color: white;
+    font-family: "Lato", "sans-serif";
+    font-weight: 100;
+    letter-spacing: 1px;
+     cursor: pointer;
+   
+}
+
+.section_2  button:hover {
+    background-color: #F09D00;
 }
 
 
@@ -177,6 +244,13 @@
     .header .menu img {
         width: 20px;
     }
+    
+    .section_2 img{
+    width:  35vw;
+    height: auto;
+    margin: 0 auto;
+}
+
 }
 
 @media screen and (min-width: 850px) {
@@ -276,6 +350,49 @@
     }
     
     
+   .section_2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+}
+
+.section_2 img{
+    width:  27vw;
+}
+.section_2 .narctic_desc{
+        place-self: center;
+    width: 40vw;
+    }
+
+
+
+.section_2 button{
+   grid-column-start: 2;
+    width: 15vw;
+    margin-top: -7vh;
+   
+}
+
+
 
 }
 
+
+@media screen and (min-width: 1000px) {
+.section_2 img{
+    width:  24vw;
+}
+  
+.section_2 .narctic_desc{
+        place-self: center;
+    width: 30vw;
+
+    }
+    
+    .section_2 button{
+   grid-column-start: 2;
+    width: 15vw;
+    margin-top: -11vh;
+   
+}
+    
+}
