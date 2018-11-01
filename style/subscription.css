@@ -11,8 +11,8 @@ body {
 }
 
 div {
-  position: relative;
-  padding: 100px;
+  /* position: relative; */
+  padding: 10px;
   margin: 10px;
   /* background-color: lightgreen; */
   border: 1px black solid;
@@ -31,6 +31,131 @@ button {
 .landing-page {
   grid-area: 1/1/1/3;
 }
+
+.landing-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+}
+
+.land-imgs {
+  margin: 0;
+  width: 50vw;
+  height: 100vw;
+  background-image: url(/img-landing/Group-84.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+/* .land-imgs {
+  display: grid;
+  grid-template-columns: 1fr 0.5fr 0.5fr 0.5fr;
+  grid-template-rows: 0.5fr 2fr 1fr;
+  width: 50vw;
+  height: 80vh;
+}
+
+.land-desk {
+  grid-area: 1/1/4/4;
+  background-image: url(/img-landing/TRANSPAREnt.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.land-mobile {
+  grid-area: 2/3/5/5;
+  background-image: url(/img-landing/Group-75.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  z-index: 4;
+} */
+
+.land-bodytext {
+  margin: 0;
+  width: 50vw;
+  height: 100vh;
+  background-image: url(/img-landing/Group-85-2x.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+/* .land-title {
+  width: 50vw;
+  height: 20vh;
+  background-image: url(/img-landing/subscribe-to-title-2x.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.land-title-blue {
+  width: 25vw;
+  height: 10vh;
+  background-image: url(/img-landing/PRINT-AND-DIGITAL-2x.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  
+}
+
+.land-title-yellow {
+  background-image: url(/img-landing/save-767-dkk.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.icons-land-table {
+  display: grid;
+  grid-template-columns: 0.5fr 1fr;
+}
+
+.icon-land-1 {
+  background-image: url(/img-landing/18-2x.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.land-body-1 {
+  background-image: url(/img-landing/18-bodytext-2x.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.icon-land-2 {
+  background-image: url(/img-landing/20-2x.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.land-body-2 {
+  background-image: url(/img-landing/20-bodytext-2x.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.icon-land-3 {
+  background-image: url(/img-landing/6-2x.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.land-body-3 {
+  background-image: url(/img-landing/6-bodytext-2x.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.icon-land-4 {
+  background-image: url(/img-landing/8-2x.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.land-body-4 {
+  background-image: url(/img-landing/8-bodytext-2x.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+} */
 
 .table-offers {
   grid-area: 2/1/2/3;
