@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="form.css">
+    <title>E-mail</title>
+</head>
+
+<body>
+    <!-- You probably have to add more attributes to the form, and check is it ok - maybe your bf can help us - after clicking submit-->
+    <form action="receiver.php">
+   <!-- we should also add button edit with icon after the step 1 is done - like in prototype-->
+        <div class="step">
+            <h3> Step 1: Choose your jacket size. </h3>
+        </div>
+
+        <div class="wrapper-1">
+            <div class="jacket">
+                <img src="images/newjacket1.png">
+                <p> N'arctic Fiber Jacket</p>
+            </div>
+
+            <h4> choose a size: </h4>
+
+         <select>
+          <option value="S">S</option>
+          <option value="M">M</option>
+          <option value="L">L</option>
+          <option value="XL">XL</option>
+        </select>
+ </div>
+ <!-- we should also add button edit with icon after the step 2 is done - like in prototype-->
+           <div class="step">
+            <h3> Step 2: Enter customer information. </h3>
+        </div>
+
+          
+        <fieldset class="wrapper-2">
+    
+             <input type="submit" value="submit">
+            <div>
+                <label for="name">First name:</label>
+                <input type="text" id="FirstName" name="first_name" placeholder="First name" required minlength="3" maxlength="10">
+                <span class="required"></span>
+                <span class="correct"></span>
+            </div>
+
+            <div>
+
+                <label for="name">Last name:</label>
+                <input type="text" id="LastName" name="last_name" placeholder="Last name" required minlength="3" maxlength="10">
+                <span class="required"></span>
+                <span class="correct"></span>
+            </div>
+            
+              <div>
+
+                <label for="name">Adress:</label>
+                <input type="text" id="Adress" name="adress" placeholder="write your adress" required minlength="6" maxlength="20">
+                <span class="required"></span>
+                <span class="correct"></span>
+            </div>
+            
+              <div>
+
+                <label for="name">ZIP Code:</label>
+                <input type="text" id="ZipCode" name="ZipCode" placeholder=" _  _  _  _" required minlength="4" maxlength="6">
+                <span class="required"></span>
+                <span class="correct"></span>
+            </div>
+            
+              <div>
+
+                <label for="name">City:</label>
+                <input type="text" id="city" name="city" placeholder="city name" required minlength="4" maxlength="15">
+                <span class="required"></span>
+                <span class="correct"></span>
+            </div>
+           
+            <div>
+
+                <label for="mail">E-mail:</label>
+                <input type="email" id="mail" name="user_mail" placeholder="e-mail" required>
+                <span class="required"></span>
+                <span class="correct"></span>
+            </div>
+            
+            <div>
+
+                <label for="mail">Confirm E-mail:</label>
+                <input type="email" id="mail" name="user_mail" placeholder="e-mail" required>
+                <span class="required"></span>
+                <span class="correct"></span>
+            </div>
+            <div>
+
+                <label for="mail">Phone:</label>
+                <input type="phone" id="phone" name="user_phone" placeholder="phone" required minlength="5" maxlength="12">
+                <span class="required"></span>
+                <span class="correct"></span>
+            </div>
+           
+        
+        </fieldset>
+         <!-- we should also add button edit with icon after the step 3 is done - like in prototype-->
+         <div class="step">
+            <h3> Step 3: Choose payment method. </h3>
+        </div>
+        
+        
+    
+    </form>
+    
+    
+
+
+</body>
+
+</html>

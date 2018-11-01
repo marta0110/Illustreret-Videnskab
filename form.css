@@ -1,0 +1,350 @@
+.step h3 {
+    color: black;
+    font-family: "Lato", "sans-serif";
+    font-size: 20px;
+    justify-self: center;
+    border-bottom: 3px solid #54C7F3;
+    width: 90vw;
+}
+
+.wrapper-1 {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100vw;
+   
+}
+
+.wrapper-1 .jacket{
+    justify-self: center;
+}
+.wrapper-1 img {
+    width: 70vw;
+    height: auto;
+    margin: 0 auto;
+    
+}
+
+.wrapper-1 p {
+    color: black;
+    font-family: "Lato", "sans-serif";
+    font-weight: 100;
+    font-size: 18px;
+    justify-self: center;
+    text-align: center;
+}
+
+.wrapper-1 h4 {
+    color: black;
+    font-family: "Lato", "sans-serif";
+    font-weight: 200;
+    font-size: 20px;
+    justify-self: center;
+}
+
+.wrapper-1 select {
+    color: black;
+    font-family: "Lato", "sans-serif";
+    font-weight: 200;
+    font-size: 15px;
+    margin-bottom: 1em;
+    padding: .25em;
+    border: 0;
+    border-bottom: 2px solid #54C7F3;
+    letter-spacing: .15em;
+    background-color: white;
+    width: 20vw;
+    justify-self: center;
+    margin: 0 auto;
+}
+
+/* TO DO - ADD THE ARROW CHANGE - CODE IN JS
+SOURCE : https://www.w3schools.com/howto/tryit.asp?filename=tryhow_custom_select 
+
+/*style the arrow inside the select element:
+.select-selected:after {
+  position: absolute;
+  content: "";
+  top: 14px;
+  right: 10px;
+  width: 0;
+  height: 0;
+  border: 6px solid #54C7F3;
+  border-color: IN our case - #54C7F3;
+}
+
+*/
+
+/*point the arrow upwards when the select box is open (active):
+.select-selected.select-arrow-active:after {
+  border-color: in our case arrow color: #54C7F3;
+  top: 7px;
+}
+
+*/
+
+
+/* step 2 */
+
+
+.wrapper-2 {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 80vw;
+    margin: 0 auto;
+}
+
+.required:after {
+    content: "*";
+    color: red;
+}
+
+:required {
+    border: 1px solid black;
+}
+
+input:valid {
+    border: 1px solid black;
+}
+
+.wrapper-2 div input:valid:not(:placeholder-shown) ~ .correct::after {
+    content: "✅";
+  
+}
+
+div input:invalid:not(:placeholder-shown) ~ .correct::after {
+    content: "this field is required";
+    color: red;
+    font-family: "Lato", "sans-serif";
+    font-size: 15px;
+    font-weight: 200;
+    
+}
+
+fieldset {
+    padding: 2vw;
+    grid-column-gap: 10px;
+    justify-content: start;
+    position: relative;
+    padding-bottom: 10vw;
+    border: 0px;
+}
+
+fieldset > div {
+    display: grid;
+    grid-template: auto/repeat(4, auto);
+    padding-bottom: 10px;
+    margin: 0;
+    justify-content: start;
+    width: 300px;
+}
+
+fieldset > div label {
+    min-width: 30vw;
+}
+
+fieldset > div input {
+    min-width: 35vw;
+    max-width: 35vw;
+}
+
+input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid white;
+    border-radius: 10px;
+    box-sizing: border-box;
+     box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.2);
+}
+
+input[type=phone] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid white;
+    border-radius: 10px;
+    box-sizing: border-box;
+     box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.2);
+}
+
+
+input[type=email] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid white;
+    border-radius: 10px;
+    box-sizing: border-box;
+     box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.2);
+}
+fieldset > div .correct {
+    min-width: 20vw;
+    max-width: 20vw;
+}
+
+fieldset > div .subscription span {
+    font-family: "Lato", sans-serif;
+    font-weight: 200;
+    font-size: 16px;
+    padding: 5px;
+}
+
+fieldset > div .subscription {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+fieldset > .terms label {
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+
+fieldset > .terms {
+    padding: 5px;
+}
+
+fieldset > legend {
+    order: 1;
+}
+
+fieldset > input[type="submit"] {
+    padding: 10px;
+    background-color: #FFB818;
+    border: 1px solid #FFB818;
+    color: white;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    cursor: pointer;
+    position: absolute;
+    width: 80px;
+    height: auto;
+    left: 37vw;
+    bottom: -3vw;
+    cursor: pointer;
+    justify-self: center;
+}
+
+fieldset > input[type="submit"]:hover {
+    background-color:#E6A000;
+    border: #E6A000;
+}
+
+fieldset label {
+    font-family: "Lato", sans-serif;
+    font-weight: 200;
+    font-size: 16px;
+}
+
+fieldset textarea {
+    font-family: "Lato", sans-serif;
+    font-weight: 200;
+    font-size: 16px;
+    padding: 2vw;
+}
+
+fieldset label {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+
+input[type="submit"]:active ~ div input {
+    background-color: red;
+}
+
+
+ @media screen and (min-width: 569px) {
+    .wrapper-1 {
+        display: grid;
+        grid-template-columns: 50vw 1fr 1fr;
+        width: 80vw;
+        padding-left: 10vw;
+        padding-right: 10vw;
+    }
+    .wrapper-1 img {
+        width: 30vw;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    .wrapper-1 h4 {
+        font-size: 18px;
+        place-self: center;
+        width: 20vw;
+
+
+    }
+
+    .wrapper-1 select {
+        place-self: center;
+        justify-self: start;
+        width: 10vw;
+    }
+
+}
+
+
+@media screen and (min-width: 769px) {
+    .wrapper-1 {
+        display: grid;
+        grid-template-columns: 50vw 1fr 1fr;
+        width: 75vw;
+        padding-left: 10vw;
+        padding-right: 15vw;
+    }
+
+    .wrapper-1 img {
+        margin-left: 0;
+    }
+    .wrapper-1 h4 {
+        width: 15vw;
+    }
+
+    .wrapper-1 select {
+        width: 10vw;
+    }
+    
+    
+    /* step 2 */
+    
+fieldset > div label {
+    min-width: 15vw;
+   
+}
+
+fieldset > div input {
+    min-width: 35vw;
+    max-width: 35vw;
+}
+  
+  fieldset > input[type="submit"] {
+    left: 30vw;
+    bottom: 2vw;
+    cursor: pointer;
+    justify-self: center;
+}
+ 
+    
+}
+
+
+@media screen and (min-width: 1100px) {
+    .wrapper-1 {
+        display: grid;
+        grid-template-columns: 45vw 1fr 1fr;
+        width: 60vw;
+        padding-left: 10vw;
+        padding-right: 30vw;
+    }
+
+    .wrapper-1 h4 {
+        width: 10vw;
+    }
+
+    .wrapper-1 select {
+        width: 5vw;
+    }
+}
